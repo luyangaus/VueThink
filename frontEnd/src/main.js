@@ -59,6 +59,9 @@ window.pageSize = 15
 const bus = new Vue()
 window.bus = bus
 
+axios.defaults.baseURL = 'http://127.0.0.1/VueThink2/php/index.php/'
+window.HOST = 'http://127.0.0.1/VueThink2/php/index.php/'
+
 new Vue({
   el: '#app',
   template: '<App/>',

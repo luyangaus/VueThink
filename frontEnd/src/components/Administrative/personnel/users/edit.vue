@@ -138,6 +138,7 @@
       getAllOrgs() {
         this.apiGet('admin/structures').then((res) => {
           this.handelResponse(res, (data) => {
+            console.log('orgs = ', _g.j2s(res))
             this.orgsOptions = data
           })
         })
